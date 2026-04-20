@@ -1,0 +1,37 @@
+{
+  "name": "geosnap",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@fontsource/dm-mono": "^5.2.7",
+    "@fontsource/syne": "^5.2.7",
+    "@googlemaps/js-api-loader": "^1.16.8",
+    "@supabase/supabase-js": "^2.49.8",
+    "clsx": "^2.1.1",
+    "exifr": "^7.1.3",
+    "framer-motion": "^11.11.17",
+    "idb": "^8.0.2",
+    "nanoid": "^5.1.5",
+    "next": "14.2.7",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "@types/google.maps": "^3.58.1",
+    "@types/node": "^22.10.2",
+    "@types/react": "^18.3.13",
+    "@types/react-dom": "^18.3.1",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^8.57.1",
+    "eslint-config-next": "14.2.7",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.7.2"
+  }
+}

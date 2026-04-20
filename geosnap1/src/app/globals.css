@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #0a0a0f;
+  --surface: #10151f;
+  --surface-alt: #151c2b;
+  --primary: #1a73e8;
+  --accent: #e8ff47;
+  --text: #eaf1ff;
+  --muted: #8a97b1;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  background: var(--bg);
+  color: var(--text);
+}
+
+body {
+  font-family: 'Syne', ui-sans-serif, sans-serif;
+  background-image:
+    radial-gradient(circle at 15% 20%, rgba(26, 115, 232, 0.14), transparent 35%),
+    radial-gradient(circle at 85% 15%, rgba(232, 255, 71, 0.1), transparent 30%),
+    radial-gradient(circle at 40% 80%, rgba(39, 56, 92, 0.28), transparent 35%),
+    linear-gradient(150deg, #090b12 0%, #0f1521 48%, #0a0a0f 100%);
+  background-attachment: fixed;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: 0.02em;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+a {
+  color: inherit;
+}
+
+.mono {
+  font-family: 'DM Mono', ui-monospace, monospace;
+}
+
+.surface {
+  background: linear-gradient(180deg, rgba(15, 21, 34, 0.96), rgba(10, 14, 22, 0.94));
+  border: 1px solid rgba(138, 151, 177, 0.2);
+  border-radius: 16px;
+  backdrop-filter: blur(8px);
+}
+
+.noise-overlay {
+  position: relative;
+}
+
+.noise-overlay::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.08;
+  mix-blend-mode: soft-light;
+  background-image: radial-gradient(circle at 30% 30%, #fff 0.4px, transparent 0.5px);
+  background-size: 3px 3px;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(138, 151, 177, 0.45);
+  border-radius: 999px;
+}
